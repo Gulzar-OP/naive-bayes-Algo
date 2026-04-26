@@ -17,7 +17,7 @@ function App() {
       setLoading(true);
       setError("");
 
-      const res = await axios.post("http://127.0.0.1:5000/predict", formData);
+      const res = await axios.post("https://naive-bayes-algo.onrender.com/predict", formData);
       setResult(res.data.result);
     } catch (err) {
       console.error(err);

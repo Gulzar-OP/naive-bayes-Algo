@@ -6,12 +6,12 @@ app = Flask(__name__)
 CORS(app)
 
 # load model + encoders
-model = joblib.load("./model/model.pkl")
-le_outlook = joblib.load("./model/le_outlook.pkl")
-le_temp = joblib.load("./model/le_temp.pkl")
-le_humidity = joblib.load("./model/le_humidity.pkl")
-le_wind = joblib.load("./model/le_wind.pkl")
-le_play = joblib.load("./model/le_play.pkl")
+model = joblib.load("model/model.pkl")
+le_outlook = joblib.load("model/le_outlook.pkl")
+le_temp = joblib.load("model/le_temp.pkl")
+le_humidity = joblib.load("model/le_humidity.pkl")
+le_wind = joblib.load("model/le_wind.pkl")
+le_play = joblib.load("model/le_play.pkl")
 # /Users/gulzarhussain/Desktop/ML projects/naive-bayes/server/model/le_humidity.pkl
 @app.route("/", methods=["GET"])
 def home():
